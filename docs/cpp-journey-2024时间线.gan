@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="cpp-journey-2024时间线" company="" webLink="http://" view-date="2025-06-01" view-index="0" gantt-divider-location="640" resource-divider-location="300" version="3.3.3312" locale="zh_CN">
+    <description/>
+    <view zooming-state="default:10" id="gantt-chart">
+        <field id="tpd3" name="名称" width="365" order="0"/>
+        <field id="tpd4" name="开始日期" width="137" order="1"/>
+        <field id="tpd5" name="结束日期" width="137" order="2"/>
+        <field id="tpd15" name="备注" width="20" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <timeline><![CDATA[2,0]]></timeline>
+        <option id="color.recent"><![CDATA[#009933 #00cc66 #33ff00 #009966 #33ff33]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="名称" width="210" order="0"/>
+        <field id="1" name="默认角色" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="d095b606a6ee47528a91a60fe699b46c" name="一、筑基阶段：突破语法局限，夯实系统级思维" color="#33ff00" meeting="false" start="2025-04-08" duration="90" complete="0" expand="true">
+            <notes><![CDATA[学习目标：
+​​STL深度解剖​​
+实现自定义容器：手写简化版vector（需支持动态扩容策略）、unordered_map（实现哈希冲突处理）
+分析STL源码：通过Compiler Explorer观察std::sort的优化策略（插入排序+快速排序+堆排序混合）
+
+​​内存管理实战​​
+用valgrind --leak-check=full检测LeetCode代码中的内存隐患
+实现智能指针：编写支持引用计数的SharedPtr类（需处理循环引用问题）
+
+​​现代特性掌握​​
+将LeetCode代码重构为C++17风格：
+用std::optional处理可能失败的算法结果
+用constexpr if实现编译期条件分支]]></notes>
+            <depend id="1" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="1" uid="b10819ce48f746bc93552bd2c7119397" name="二、项目实战阶段（3-6个月）：构建可落地的工程能力" color="#00cc66" meeting="false" start="2025-08-12" duration="60" complete="0" expand="true">
+            <notes><![CDATA[高性能HTTP服务器（推荐）​​
+📌 阶段目标：
+第31-45天：基于epoll实现单线程10000+并发连接
+第46-60天：添加libuv事件循环支持
+第61-75天：实现HTTP/1.1 Keep-Alive]]></notes>
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="2" uid="f8dde849f47140dd996678c691352e33" name="三、高阶突破阶段（6-12个月）：打造领域不可替代性" color="#009933" meeting="false" start="2025-11-04" duration="180" complete="0" expand="true">
+            <notes><![CDATA[专项突破方向（任选其一）：
+​​编译器开发方向​​
+实现LLVM简单Pass（如统计函数调用次数）
+学习Clang AST Matcher实现代码静态分析
+资源参考：网页4[LLVM项目建议]、网页9[编译原理章节]
+
+​​游戏引擎方向​​
+基于ECS架构实现实体组件系统
+用模板元编程优化渲染管线（CRTP模式）
+资源参考：网页4[游戏开发建议]、网页6[图形处理章节]
+
+​​基础设施方向​​
+参与RocksDB源码贡献（如优化LSM-Tree合并策略）
+实现用户态TCP协议栈（基于DPDK框架）
+资源参考：网页7[开源项目建议]、网页8[系统编程指导]]]></notes>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
